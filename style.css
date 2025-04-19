@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
+    --cor-de-fundo: #242222;
+    --verde: #cdeb24;
     --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --botao-ativo: #3bbff3;
+    --botao-inativo: rgba(7, 216, 18, 0.233);
+    --texto-fundo: rgba(64, 46, 228, 0.164);
 }
 
 body {
@@ -14,7 +14,6 @@ body {
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -35,7 +34,6 @@ body {
 .titulo-principal span {
     color: var(--verde);
 }
-
 
 .botao {
     font-family: 'Chakra Petch', sans-serif;
@@ -106,14 +104,32 @@ body {
 .contador-digito-numero {
     font-size: 80px;
     margin: 0;
-
 }
 
 .contador-digito-texto {
     color: var(--verde);
     font-size: 20px;
     margin: 0;
+}
 
+.termometro {
+    width: 40px;
+    height: 200px;
+    background-color: #555;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 2px solid #fff;
+    position: relative;
+}
+
+.nivel {
+    width: 100%;
+    background-color: var(--verde);
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    transition: height 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
